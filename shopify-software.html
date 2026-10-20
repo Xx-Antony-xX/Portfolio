@@ -1,623 +1,312 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Shopify Agent Platform - Custom E-Commerce Software Case Study | Antony Deepak</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Proprietary Shopify Automation & Multi-Store Management Platform engineered with Laravel 11, AI SEO, Liquid Theme Studio, and Multi-Modular Backups by Antony Deepak Raj." />
-	<meta name="keywords" content="Shopify Custom Software, Laravel 11, Shopify API, Liquid Studio, E-Commerce Automation, AI SEO, Backlink Extractor, Antony Deepak" />
-	<meta name="author" content="Antony Deepak Raj" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Shopify Agent Platform - Proprietary SaaS Case Study | Antony Deepak Raj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Technical Case Study: Shopify Agent Platform — An industrial-grade E-Commerce Automation, AI SEO generation, and Liquid Theme Studio platform engineered with Laravel 11 by Antony Deepak Raj." />
+  <meta name="author" content="Antony Deepak Raj" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+  <!-- Modern Stylesheet -->
+  <link rel="stylesheet" href="css/modern.css">
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-
-	<style>
-		/* Custom Case Study Styles */
-		.case-study-hero {
-			background: linear-gradient(135deg, #0b132b 0%, #1c2541 60%, #1e1b4b 100%);
-			padding: 60px 40px;
-			border-radius: 12px;
-			color: #fff;
-			margin-bottom: 40px;
-			position: relative;
-			overflow: hidden;
-			box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-		}
-		.case-study-hero::after {
-			content: '';
-			position: absolute;
-			top: -50%;
-			right: -20%;
-			width: 500px;
-			height: 500px;
-			background: radial-gradient(circle, rgba(44, 152, 240, 0.25) 0%, transparent 70%);
-			border-radius: 50%;
-			pointer-events: none;
-		}
-		.case-badge {
-			display: inline-block;
-			background: rgba(44, 152, 240, 0.2);
-			border: 1px solid rgba(44, 152, 240, 0.5);
-			color: #70bbf9;
-			padding: 6px 14px;
-			font-size: 11px;
-			text-transform: uppercase;
-			letter-spacing: 1.5px;
-			font-weight: 700;
-			border-radius: 20px;
-			margin-bottom: 20px;
-		}
-		.case-study-hero h1 {
-			color: #ffffff;
-			font-size: 38px;
-			font-weight: 700;
-			margin-bottom: 15px;
-			font-family: 'Playfair Display', Georgia, serif;
-		}
-		.case-study-hero p.lead-text {
-			font-size: 18px;
-			color: #cbd5e1;
-			max-width: 850px;
-			line-height: 1.7;
-			margin-bottom: 30px;
-		}
-		.meta-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-			gap: 20px;
-			padding-top: 25px;
-			border-top: 1px solid rgba(255, 255, 255, 0.12);
-		}
-		.meta-item span.label {
-			display: block;
-			font-size: 11px;
-			text-transform: uppercase;
-			color: #94a3b8;
-			letter-spacing: 1px;
-			margin-bottom: 4px;
-			font-weight: 600;
-			padding: 0;
-			text-align: left;
-		}
-		.meta-item strong {
-			font-size: 14px;
-			color: #f8fafc;
-			font-weight: 600;
-		}
-		.showcase-banner-img {
-			width: 100%;
-			border-radius: 12px;
-			box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-			margin-bottom: 45px;
-			border: 1px solid #e2e8f0;
-		}
-		.section-tag {
-			color: #2c98f0;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			font-weight: 700;
-			font-size: 12px;
-			display: block;
-			margin-bottom: 8px;
-		}
-		.feature-box-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-			gap: 25px;
-			margin: 30px 0 50px;
-		}
-		.feature-box-card {
-			background: #ffffff;
-			border: 1px solid #e2e8f0;
-			border-radius: 10px;
-			padding: 30px 25px;
-			transition: all 0.3s ease;
-			box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-			position: relative;
-			overflow: hidden;
-		}
-		.feature-box-card:hover {
-			transform: translateY(-5px);
-			border-color: #2c98f0;
-			box-shadow: 0 15px 30px rgba(44, 152, 240, 0.12);
-		}
-		.feature-box-card::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 4px;
-			height: 100%;
-			background: #2c98f0;
-			opacity: 0;
-			transition: opacity 0.3s;
-		}
-		.feature-box-card:hover::before {
-			opacity: 1;
-		}
-		.feature-icon-badge {
-			width: 50px;
-			height: 50px;
-			border-radius: 10px;
-			background: #f0f7ff;
-			color: #2c98f0;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 24px;
-			margin-bottom: 20px;
-		}
-		.feature-box-card h4 {
-			font-size: 18px;
-			font-weight: 700;
-			margin-bottom: 12px;
-			color: #1e293b;
-		}
-		.feature-box-card p {
-			color: #64748b;
-			font-size: 14px;
-			line-height: 1.7;
-			margin-bottom: 0;
-		}
-		.tech-pill-list {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 8px;
-			margin-top: 15px;
-		}
-		.tech-pill {
-			background: #f1f5f9;
-			color: #475569;
-			padding: 4px 10px;
-			border-radius: 4px;
-			font-size: 11px;
-			font-weight: 600;
-		}
-		.tech-pill.accent {
-			background: #e0f2fe;
-			color: #0284c7;
-		}
-		.tech-pill.green {
-			background: #f0fdf4;
-			color: #16a34a;
-		}
-		.architecture-diagram {
-			background: #0f172a;
-			color: #e2e8f0;
-			padding: 35px;
-			border-radius: 10px;
-			margin: 35px 0;
-			font-family: monospace;
-			border: 1px solid #1e293b;
-		}
-		.arch-layer {
-			border: 1px dashed rgba(255, 255, 255, 0.2);
-			padding: 18px;
-			margin-bottom: 15px;
-			border-radius: 6px;
-			background: rgba(255, 255, 255, 0.02);
-		}
-		.arch-layer strong {
-			color: #38bdf8;
-			display: block;
-			margin-bottom: 8px;
-			font-size: 13px;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
-		.stat-box {
-			background: #f8fafc;
-			border-left: 4px solid #2c98f0;
-			padding: 25px;
-			border-radius: 0 8px 8px 0;
-			margin-bottom: 25px;
-		}
-		.stat-number {
-			font-size: 32px;
-			font-weight: 700;
-			color: #2c98f0;
-			display: block;
-			font-family: 'Quicksand', sans-serif;
-			line-height: 1;
-			margin-bottom: 5px;
-		}
-		.stat-desc {
-			font-size: 14px;
-			color: #475569;
-			margin-bottom: 0;
-		}
-		.btn-back-portfolio {
-			display: inline-flex;
-			align-items: center;
-			gap: 8px;
-			padding: 12px 26px;
-			background: #2c98f0;
-			color: #fff !important;
-			font-weight: 700;
-			border-radius: 6px;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			font-size: 13px;
-			transition: all 0.3s;
-		}
-		.btn-back-portfolio:hover {
-			background: #1980d4;
-			transform: translateX(-3px);
-		}
-	</style>
+  <style>
+    .case-hero-card {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 27, 75, 0.95) 100%);
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 55px 45px;
+      margin-top: 100px;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    }
+    .case-spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding-top: 25px;
+      margin-top: 30px;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .case-spec-item span {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .case-spec-item strong {
+      color: #fff;
+      font-size: 14.5px;
+      font-weight: 600;
+    }
+    .arch-code-block {
+      background: #030712;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+      color: #cbd5e1;
+      margin: 25px 0;
+      line-height: 1.7;
+      overflow-x: auto;
+    }
+    .arch-code-block strong {
+      color: #38bdf8;
+    }
+  </style>
 </head>
 
 <body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-				aria-expanded="false" aria-controls="navbar"><i></i></a>
-			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-					<h1 id="colorlib-logo"><a href="index.html">Antony Deepak</a></h1>
-					<span class="position"><a href="index.html">Software Engineer & Shopify Developer</a></span>
-				</div>
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
-							<li><a href="index.html" class="external">Home</a></li>
-							<li><a href="index.html#about" class="external">About</a></li>
-							<li><a href="index.html#services" class="external">Services</a></li>
-							<li><a href="index.html#skills" class="external">Skills</a></li>
-							<li><a href="index.html#experience" class="external">Experience</a></li>
-							<li class="active"><a href="index.html#work" class="external">Work (Case Study)</a></li>
-							<li><a href="index.html#contact" class="external">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
+  <!-- Ambient Glows -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="bg-grid-pattern"></div>
 
-				<div class="colorlib-footer">
-					<p><small>&copy;
-							Copyright
-							<script>document.write(new Date().getFullYear());</script> Antony Deepak
-						</small></p>
-					<ul>
-						<li><a href="https://linkedin.com/in/antony-deepak-raj" target="_blank"><i class="icon-linkedin2"></i></a></li>
-						<li><a href="index.html#contact"><i class="icon-mail"></i></a></li>
-					</ul>
-				</div>
-			</aside>
+  <!-- Navigation -->
+  <header class="site-navbar">
+    <div class="navbar-inner">
+      <a href="index.html#home" class="site-brand">
+        <div class="brand-monogram">AD</div>
+        <div class="brand-text">
+          <span class="brand-name">Antony Deepak</span>
+          <span class="brand-status"><span class="status-dot"></span> Case Study</span>
+        </div>
+      </a>
 
-			<div id="colorlib-main">
-				<div class="colorlib-narrow-content" style="padding-top: 40px; padding-bottom: 60px;">
-					
-					<!-- Breadcrumb & Back Link -->
-					<div style="margin-bottom: 25px;">
-						<a href="index.html#work" class="btn-back-portfolio">
-							<i class="icon-arrow-left3"></i> Back to Portfolio
-						</a>
-					</div>
+      <ul class="nav-links-desktop">
+        <li class="nav-link-item"><a href="index.html#home">Home</a></li>
+        <li class="nav-link-item"><a href="index.html#flagship" class="highlight">Flagship SaaS</a></li>
+        <li class="nav-link-item"><a href="index.html#projects">All Projects</a></li>
+        <li class="nav-link-item"><a href="index.html#skills">Skills</a></li>
+        <li class="nav-link-item"><a href="index.html#contact">Contact</a></li>
+      </ul>
 
-					<!-- Hero Card -->
-					<div class="case-study-hero">
-						<span class="case-badge">Proprietary Full-Stack Software</span>
-						<h1>Shopify Agent Platform</h1>
-						<p class="lead-text">
-							An industrial-grade E-Commerce Automation, AI-Powered SEO Generation, and Store Architecture Platform built with Laravel 11, Shopify GraphQL/REST APIs, Local & Cloud LLMs, and Multi-Modular Backup Engines.
-						</p>
+      <div class="nav-actions">
+        <a href="index.html#projects" class="btn-nav-action btn-nav-outline">
+          <i data-lucide="arrow-left"></i> Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </header>
 
-						<div class="meta-grid">
-							<div class="meta-item">
-								<span class="label">Role & Architecture</span>
-								<strong>Lead Software Engineer & System Architect</strong>
-							</div>
-							<div class="meta-item">
-								<span class="label">Core Framework</span>
-								<strong>Laravel 11 / PHP 8.1+ / MySQL</strong>
-							</div>
-							<div class="meta-item">
-								<span class="label">E-Commerce & Cloud APIs</span>
-								<strong>Shopify GraphQL/REST, Google Cloud, TinyPNG, Cloudinary</strong>
-							</div>
-							<div class="meta-item">
-								<span class="label">Artificial Intelligence</span>
-								<strong>Ollama Local LLMs & Gemini AI Integration</strong>
-							</div>
-						</div>
-					</div>
+  <main class="main-wrapper">
+    <!-- Hero Showcase Header -->
+    <div class="case-hero-card">
+      <span class="flagship-badge">
+        <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i> Enterprise E-Commerce SaaS Architecture
+      </span>
+      <h1 class="hero-title" style="margin-bottom: 15px; font-size: clamp(32px, 4.5vw, 54px);">
+        Shopify Agent Platform
+      </h1>
+      <p class="hero-description" style="max-width: 850px; margin-bottom: 0;">
+        An industrial-grade E-Commerce Automation, AI-Powered SEO Generation, and Store Architecture Platform built with Laravel 11, Shopify GraphQL/REST APIs, Local & Cloud LLMs, and Multi-Modular Backup Engines.
+      </p>
 
-					<!-- Showcase Image -->
-					<img src="images/shopify-project.jpg" alt="Shopify Agent Platform Banner" class="showcase-banner-img img-responsive">
+      <div class="case-spec-grid">
+        <div class="case-spec-item">
+          <span>Role & Architecture</span>
+          <strong>Lead Software Architect & Engineer</strong>
+        </div>
+        <div class="case-spec-item">
+          <span>Core Framework</span>
+          <strong>Laravel 11 / PHP 8.1+ / MySQL</strong>
+        </div>
+        <div class="case-spec-item">
+          <span>E-Commerce APIs</span>
+          <strong>Shopify GraphQL & REST Admin API</strong>
+        </div>
+        <div class="case-spec-item">
+          <span>Artificial Intelligence</span>
+          <strong>Ollama Local LLMs & Gemini Pro API</strong>
+        </div>
+      </div>
+    </div>
 
-					<!-- Executive Summary & Problem -->
-					<div class="row" style="margin-bottom: 40px;">
-						<div class="col-md-12">
-							<span class="section-tag">Executive Summary</span>
-							<h2 class="colorlib-heading" style="margin-bottom: 20px;">The Challenge & Vision</h2>
-							<p style="font-size: 16px; line-height: 1.8; color: #334155;">
-								Managing high-volume Shopify stores with tens of thousands of variants, custom Liquid themes, and heavy media assets creates severe operational bottlenecks. Manual SEO optimization (such as writing descriptive alt-texts and meta-tags for 5,000+ items) is time-prohibitive. Store theme edits made directly in Shopify lack granular version control and instantaneous rollback, while storage costs balloon from unreferenced duplicate assets.
-							</p>
-							<p style="font-size: 16px; line-height: 1.8; color: #334155;">
-								To solve these operational hurdles, I engineered <strong>Shopify Agent</strong>—a proprietary, standalone web platform that bridges custom business logic, automated AI pipelines, and deep Shopify administrative protocols to give merchants complete autonomy over their stores.
-							</p>
-						</div>
-					</div>
+    <!-- Featured Showcase Image -->
+    <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: 0 20px 50px rgba(0,0,0,0.6); margin-bottom: 60px;">
+      <img src="images/shopify-project.jpg" alt="Shopify Agent Platform Banner" style="width: 100%; height: auto; display: block;">
+    </div>
 
-					<!-- Metrics / Impact -->
-					<div class="row" style="margin-bottom: 45px;">
-						<div class="col-md-4">
-							<div class="stat-box">
-								<span class="stat-number">85%</span>
-								<p class="stat-desc">Reduction in catalog SEO maintenance and metadata generation time through batch AI automation.</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="stat-box" style="border-left-color: #10b981;">
-								<span class="stat-number" style="color: #10b981;">100%</span>
-								<p class="stat-desc">Automated backup redundancy across Themes, Collections, Products, Variants, Files, Customers, and Orders.</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="stat-box" style="border-left-color: #6366f1;">
-								<span class="stat-number" style="color: #6366f1;">0-Ref</span>
-								<p class="stat-desc">Deep-scan asset detection eliminating dead files and duplicate media across all active Shopify theme files.</p>
-							</div>
-						</div>
-					</div>
+    <!-- The Problem & Solution -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 70px;">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 40px; backdrop-filter: var(--glass-blur);">
+        <span class="section-eyebrow"><i data-lucide="alert-circle"></i> The Bottleneck</span>
+        <h3 style="font-family: var(--font-heading); font-size: 24px; color: #fff; margin-bottom: 16px;">The Challenge</h3>
+        <p style="color: var(--text-sub); line-height: 1.8; font-size: 15px; margin-bottom: 12px;">
+          High-volume Shopify stores with tens of thousands of variants, custom Liquid templates, and extensive media libraries face severe operational hurdles:
+        </p>
+        <ul style="color: var(--text-muted); font-size: 14.5px; line-height: 1.8; padding-left: 20px;">
+          <li>Manual SEO metadata and alt-text writing across 5,000+ products is time-prohibitive.</li>
+          <li>Liquid theme edits in Shopify admin lack granular version control and instantaneous rollback.</li>
+          <li>Store backups hit PHP execution timeouts and memory overflows.</li>
+          <li>Unreferenced orphan media assets bloat storage costs and slow down store performance.</li>
+        </ul>
+      </div>
 
-					<!-- Core Architectural Modules -->
-					<div class="row">
-						<div class="col-md-12">
-							<span class="section-tag">Platform Capabilities</span>
-							<h2 class="colorlib-heading" style="margin-bottom: 15px;">Core Software Modules</h2>
-							<p style="color: #64748b; font-size: 15px; margin-bottom: 25px;">
-								Built with a modular service-oriented architecture in Laravel 11, the platform encompasses dedicated micro-workflows tailored to store operations:
-							</p>
-						</div>
-					</div>
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 40px; backdrop-filter: var(--glass-blur);">
+        <span class="section-eyebrow" style="color: var(--accent-emerald);"><i data-lucide="check-circle"></i> The Solution</span>
+        <h3 style="font-family: var(--font-heading); font-size: 24px; color: #fff; margin-bottom: 16px;">The Engineering Vision</h3>
+        <p style="color: var(--text-sub); line-height: 1.8; font-size: 15px; margin-bottom: 12px;">
+          Antony engineered a proprietary, standalone web platform that bridges custom business logic, automated AI pipelines, and deep Shopify administrative protocols:
+        </p>
+        <ul style="color: var(--text-muted); font-size: 14.5px; line-height: 1.8; padding-left: 20px;">
+          <li>Bulk AI-driven SEO description and alt-text injection with dual LLM failover.</li>
+          <li>In-browser Liquid Theme Studio with file-tree browsing and direct API deployment.</li>
+          <li>Chunked multi-modular ZIP backup engine preserving full directory trees without timeouts.</li>
+          <li>Deep-scan 0-reference asset detection eliminating dead files across themes and metafields.</li>
+        </ul>
+      </div>
+    </div>
 
-					<div class="feature-box-grid">
-						<!-- Module 1 -->
-						<div class="feature-box-card">
-							<div class="feature-icon-badge"><i class="icon-bulb"></i></div>
-							<h4>AI SEO Overdrive & Alt-Text Generator</h4>
-							<p>Automated batch generation of high-converting meta descriptions and SEO-tailored image alt-texts utilizing local Ollama models and cloud Gemini API. Eliminates repetitive manual copywriting across vast store catalogs.</p>
-							<div class="tech-pill-list">
-								<span class="tech-pill accent">Ollama LLM</span>
-								<span class="tech-pill accent">Gemini AI</span>
-								<span class="tech-pill">Batch Worker</span>
-							</div>
-						</div>
+    <!-- Core Modules Grid -->
+    <div class="section-head">
+      <span class="section-eyebrow"><i data-lucide="grid"></i> Platform Breakdown</span>
+      <h2 class="section-title">Core Software Modules</h2>
+    </div>
 
-						<!-- Module 2 -->
-						<div class="feature-box-card">
-							<div class="feature-icon-badge"><i class="icon-code"></i></div>
-							<h4>In-Browser Liquid Theme Studio</h4>
-							<p>Full-fledged syntax-aware Shopify Liquid code editor with file-tree navigation directly in the browser. Allows developers to modify templates, sections, snippets, and locales with live staging validation and snapshot rollback.</p>
-							<div class="tech-pill-list">
-								<span class="tech-pill green">Shopify Asset API</span>
-								<span class="tech-pill">Liquid Engine</span>
-								<span class="tech-pill">Code Editor</span>
-							</div>
-						</div>
+    <div class="services-grid" style="margin-bottom: 70px;">
+      <div class="service-card">
+        <div class="service-icon-box"><i data-lucide="sparkles"></i></div>
+        <h3>AI SEO & Alt-Text Generator</h3>
+        <p>Automated batch generation of high-converting meta descriptions and SEO-tailored image alt-texts utilizing local Ollama models and cloud Gemini API.</p>
+        <div class="service-tech-tags">
+          <span class="service-tag">Ollama LLMs</span>
+          <span class="service-tag">Gemini API</span>
+          <span class="service-tag">Batch Queue</span>
+        </div>
+      </div>
 
-						<!-- Module 3 -->
-						<div class="feature-box-card">
-							<div class="feature-icon-badge"><i class="icon-layers2"></i></div>
-							<h4>Multi-Modular ZIP Backup Engine</h4>
-							<p>An enterprise-grade backup system that archives selected store modules into categorized folders: Themes (preserving complete nested directory structure), Products, Files, Variants, Collections, Orders, and Customers with zero timeout limits.</p>
-							<div class="tech-pill-list">
-								<span class="tech-pill green">ZipArchive</span>
-								<span class="tech-pill">Chunked Streaming</span>
-								<span class="tech-pill">Multi-Folder Format</span>
-							</div>
-						</div>
+      <div class="service-card">
+        <div class="service-icon-box"><i data-lucide="code-2"></i></div>
+        <h3>In-Browser Liquid Theme Studio</h3>
+        <p>Syntax-aware Shopify Liquid code editor with file-tree navigation directly in the browser. Modifies templates, sections, snippets, and locales with live rollback snapshots.</p>
+        <div class="service-tech-tags">
+          <span class="service-tag">Shopify Asset API</span>
+          <span class="service-tag">Liquid Engine</span>
+        </div>
+      </div>
 
-						<!-- Module 4 -->
-						<div class="feature-box-card">
-							<div class="feature-icon-badge"><i class="icon-eye"></i></div>
-							<h4>Smart Media & 0-Reference Scanner</h4>
-							<p>Deep-scan engine identifying unused or orphan files across all Liquid templates and metafields. Integrates TinyPNG, ImageKit, and Cloudinary pipelines for smart image compression and webp conversion.</p>
-							<div class="tech-pill-list">
-								<span class="tech-pill accent">TinyPNG API</span>
-								<span class="tech-pill">Cloudinary</span>
-								<span class="tech-pill">Deep GID Matching</span>
-							</div>
-						</div>
+      <div class="service-card">
+        <div class="service-icon-box"><i data-lucide="archive"></i></div>
+        <h3>Multi-Modular ZIP Backup Engine</h3>
+        <p>Archives selected store modules into organized folders: Themes (preserving complete nested directory structure), Products, Files, Variants, Collections, Orders, and Customers with zero timeout limits.</p>
+        <div class="service-tech-tags">
+          <span class="service-tag">ZipArchive</span>
+          <span class="service-tag">Chunked Streaming</span>
+        </div>
+      </div>
 
-						<!-- Module 5 -->
-						<div class="feature-box-card">
-							<div class="feature-icon-badge"><i class="icon-globe-outline"></i></div>
-							<h4>Google Services & Indexing Diagnostics</h4>
-							<p>Direct integration with Google Search Console and Google Indexing API. Merchants can inspect live indexing status for thousands of store URLs in batch, identify crawl issues, and trigger immediate re-indexing.</p>
-							<div class="tech-pill-list">
-								<span class="tech-pill">Google Indexing API</span>
-								<span class="tech-pill">Search Console</span>
-								<span class="tech-pill green">Real-Time Audit</span>
-							</div>
-						</div>
+      <div class="service-card">
+        <div class="service-icon-box"><i data-lucide="search-check"></i></div>
+        <h3>Smart Media & 0-Reference Scanner</h3>
+        <p>Identifies unused or orphan files across all Liquid templates and metafields. Integrates TinyPNG, ImageKit, and Cloudinary pipelines for smart image compression.</p>
+        <div class="service-tech-tags">
+          <span class="service-tag">TinyPNG</span>
+          <span class="service-tag">Cloudinary</span>
+          <span class="service-tag">Deep GID Matching</span>
+        </div>
+      </div>
 
-						<!-- Module 6 -->
-						<div class="feature-box-card">
-							<div class="feature-icon-badge"><i class="icon-search"></i></div>
-							<h4>Backlink Extractor & Deep Analyzer</h4>
-							<p>Automated backlink intelligence module that parses domain referring pages, identifies anchor profiles, detects broken referral links, and generates actionable competitive backlink audits.</p>
-							<div class="tech-pill-list">
-								<span class="tech-pill accent">Web Scraping</span>
-								<span class="tech-pill">Anchor Parsing</span>
-								<span class="tech-pill">Excel/CSV Export</span>
-							</div>
-						</div>
+      <div class="service-card">
+        <div class="service-icon-box"><i data-lucide="globe"></i></div>
+        <h3>Google Services & Indexing Diagnostics</h3>
+        <p>Direct integration with Google Search Console and Google Indexing API. Inspects live indexing status for thousands of store URLs in batch and triggers immediate re-indexing.</p>
+        <div class="service-tech-tags">
+          <span class="service-tag">Google Indexing API</span>
+          <span class="service-tag">Search Console</span>
+        </div>
+      </div>
 
-						<!-- Module 7 -->
-						<div class="feature-box-card">
-							<div class="feature-icon-badge"><i class="icon-data"></i></div>
-							<h4>Catalog, Redirection & Metafields Hub</h4>
-							<p>Advanced bulk management for 301/302 URL redirects with CSV import/export, Shopify navigation menu backup, and a custom metafield inspector providing clean visual breakdowns of metaobjects.</p>
-							<div class="tech-pill-list">
-								<span class="tech-pill green">301 Redirections</span>
-								<span class="tech-pill">Metafields Manager</span>
-								<span class="tech-pill">Menu Exporter</span>
-							</div>
-						</div>
+      <div class="service-card">
+        <div class="service-icon-box"><i data-lucide="refresh-cw"></i></div>
+        <h3>Catalog & Redirections Hub</h3>
+        <p>Advanced bulk management for 301/302 URL redirects with CSV import/export, Shopify navigation menu backup, and a custom metafield inspector providing clean visual breakdowns of metaobjects.</p>
+        <div class="service-tech-tags">
+          <span class="service-tag">301 Redirects</span>
+          <span class="service-tag">Metafields Manager</span>
+        </div>
+      </div>
+    </div>
 
-						<!-- Module 8 -->
-						<div class="feature-box-card">
-							<div class="feature-icon-badge"><i class="icon-phone3"></i></div>
-							<h4>WordPress Multi-Site Sync Bridge</h4>
-							<p>A dual-portal architecture featuring parallel management for WordPress environments, enabling synchronized media libraries, core security hardening, and database optimization alongside Shopify.</p>
-							<div class="tech-pill-list">
-								<span class="tech-pill">WordPress Bridge</span>
-								<span class="tech-pill">Media Sync</span>
-								<span class="tech-pill">Security Tuning</span>
-							</div>
-						</div>
-					</div>
+    <!-- Technical Architecture Diagram -->
+    <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 45px; backdrop-filter: var(--glass-blur); margin-bottom: 70px;">
+      <span class="section-eyebrow"><i data-lucide="layers"></i> Architecture</span>
+      <h2 class="section-title">System Architecture & Data Flow</h2>
 
-					<!-- Technical Architecture Overview -->
-					<div class="row" style="margin-top: 30px;">
-						<div class="col-md-12">
-							<span class="section-tag">System Design</span>
-							<h2 class="colorlib-heading" style="margin-bottom: 20px;">Architecture & Data Flow</h2>
-							<p style="font-size: 15px; color: #475569; line-height: 1.8;">
-								The application is engineered around clean architectural separation, ensuring high availability, zero memory leaks during heavy file compression, and secure token isolation:
-							</p>
+      <div class="arch-code-block">
+<strong>[CLIENT BROWSER]</strong> Blade UI • GSAP ScrollTrigger • Asynchronous AJAX Grids • Lucide Icons
+       │
+       ▼ (HTTPS REST / SSE Streaming)
+<strong>[LARAVEL 11 CORE]</strong>
+  ├── Auth & Token Encryption Services
+  ├── BackupController (Chunked Stream Dispatcher)
+  ├── LiquidCodeController (Shopify Asset API Bridge)
+  └── SEOController (Multi-Model LLM Orchestrator)
+       │
+       ├──► <strong>[SHOPIFY ADMIN API]</strong> (GraphQL & REST 2024-04)
+       ├──► <strong>[LOCAL OLLAMA ENGINE]</strong> (Local Llama 3 / Mistral LLMs)
+       ├──► <strong>[GOOGLE CLOUD]</strong> (Search Console & Indexing API v3)
+       └──► <strong>[MEDIA CDNs]</strong> (TinyPNG / ImageKit / Cloudinary)
+       │
+       ▼
+<strong>[DATA PERSISTENCE]</strong> MySQL Storage • Chunked ZIP Generator • Disks
+      </div>
+    </div>
 
-							<div class="architecture-diagram">
-								<div class="arch-layer">
-									<strong>Presentation Layer (Frontend UI)</strong>
-									Blade Templating Engine • Tailwind / Bootstrap Responsive UI • GSAP Animations • AJAX Async Grids • Lucide Icons
-								</div>
-								<div class="arch-layer">
-									<strong>Application Core (Laravel 11)</strong>
-									Auth & Middleware • Route Security & Rate Limiting • BackupController & Stream Dispatchers • Artisan Queue Workers
-								</div>
-								<div class="arch-layer">
-									<strong>External Integration & AI Layer</strong>
-									Shopify Admin REST & GraphQL APIs • Local Ollama LLM Service • Google Gemini Pro API • Google Indexing API • TinyPNG / ImageKit / Cloudinary APIs
-								</div>
-								<div class="arch-layer" style="margin-bottom: 0;">
-									<strong>Storage & Persistence</strong>
-									MySQL Database • Encrypted Environment Settings • Storage Disk Chunks • Organized ZIP Archive Generator
-								</div>
-							</div>
-						</div>
-					</div>
+    <!-- Bottom CTA Card -->
+    <div class="case-hero-card" style="text-align: center; margin-bottom: 80px;">
+      <h2 style="color: #fff; font-size: 32px; font-weight: 800; margin-bottom: 14px;">Ready to Engineer Your Next E-Commerce Platform?</h2>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 30px; font-size: 16px;">
+        Let's discuss custom Shopify SaaS, automated AI workflows, or high-performance web systems.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html#contact" class="btn-primary-glow btn">
+          Get In Touch <i data-lucide="mail"></i>
+        </a>
+        <a href="index.html#projects" class="btn-secondary-glass btn">
+          View All Projects
+        </a>
+      </div>
+    </div>
+  </main>
 
-					<!-- Engineering Highlights / Overcoming Hurdles -->
-					<div class="row" style="margin-top: 40px; margin-bottom: 60px;">
-						<div class="col-md-12">
-							<span class="section-tag">Technical Engineering</span>
-							<h2 class="colorlib-heading" style="margin-bottom: 20px;">Key Engineering Milestones</h2>
-							
-							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-								<div class="panel panel-default" style="border-radius: 8px; margin-bottom: 15px; border-color: #e2e8f0;">
-									<div class="panel-heading" role="tab" id="headingOne" style="background: #f8fafc; border-radius: 8px;">
-										<h4 class="panel-title">
-											<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #1e293b; font-weight: 700; text-decoration: none;">
-												1. Solving PHP Timeout & Memory Overflows on Enterprise Backups
-											</a>
-										</h4>
-									</div>
-									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-										<div class="panel-body" style="color: #475569; line-height: 1.8;">
-											Generating comprehensive multi-gigabyte ZIP archives with thousands of theme liquid files and high-res media caused execution timeouts in standard environments. I re-architected the backup pipeline into chunked streaming jobs that create dedicated folders per backup type (<code>Themes/</code>, <code>Files/</code>, <code>Products/</code>, <code>Customers/</code>) directly into memory-monitored temporary staging before performing a single-pass ZipArchive compression with real-time SSE progress reporting.
-										</div>
-									</div>
-								</div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="main-wrapper">
+      <div class="footer-inner">
+        <div class="footer-copyright">
+          &copy; <script>document.write(new Date().getFullYear());</script> Antony Deepak Raj D. Case Study • Shopify Agent Platform.
+        </div>
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/antony-deepak-raj" target="_blank" class="footer-social-link"><i data-lucide="linkedin"></i></a>
+          <a href="https://github.com/Xx-Antony-xX" target="_blank" class="footer-social-link"><i data-lucide="github"></i></a>
+          <a href="index.html#home" class="footer-social-link"><i data-lucide="arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-								<div class="panel panel-default" style="border-radius: 8px; margin-bottom: 15px; border-color: #e2e8f0;">
-									<div class="panel-heading" role="tab" id="headingTwo" style="background: #f8fafc; border-radius: 8px;">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #1e293b; font-weight: 700; text-decoration: none;">
-												2. High-Accuracy 0-Reference Scan Across Dynamic Themes
-											</a>
-										</h4>
-									</div>
-									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-										<div class="panel-body" style="color: #475569; line-height: 1.8;">
-											Shopify assets can be referenced either by raw filename, CDN URL, or GraphQL Global ID (GID) within schema settings and custom metafields. I engineered a cross-referencing regex and GID parser that checks all theme assets, metaobjects, and collections simultaneously, eliminating false-positive "0 reference" reports and allowing merchants to safely prune gigabytes of orphaned images.
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default" style="border-radius: 8px; border-color: #e2e8f0;">
-									<div class="panel-heading" role="tab" id="headingThree" style="background: #f8fafc; border-radius: 8px;">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #1e293b; font-weight: 700; text-decoration: none;">
-												3. Multi-Model AI SEO Orchestration with Graceful Fallbacks
-											</a>
-										</h4>
-									</div>
-									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-										<div class="panel-body" style="color: #475569; line-height: 1.8;">
-											To avoid dependency on a single AI provider and protect merchants from rate limits, I implemented a flexible dual-engine LLM pipeline. The system can run entirely locally through Ollama (e.g. Llama 3, Mistral) for privacy and zero API costs, or seamlessly switch to Gemini Pro for high-context marketing copy with automated retry handling.
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Bottom CTA -->
-					<div class="case-study-hero" style="text-align: center; margin-top: 20px;">
-						<h2 style="color: #fff; font-size: 32px; font-weight: 700; margin-bottom: 15px;">Interested in Custom E-Commerce & Shopify Engineering?</h2>
-						<p style="color: #cbd5e1; max-width: 650px; margin: 0 auto 30px; font-size: 16px;">
-							Whether you need high-performance Shopify apps, custom SaaS platforms, or automated AI pipelines for your store, let's build something exceptional together.
-						</p>
-						<div>
-							<a href="index.html#contact" class="btn btn-primary" style="background: #2c98f0; border: none; padding: 14px 32px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; border-radius: 6px;">
-								Get In Touch <i class="icon-mail"></i>
-							</a>
-							<a href="index.html#work" class="btn btn-primary" style="background: transparent; border: 1px solid rgba(255,255,255,0.4); padding: 14px 32px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; border-radius: 6px; margin-left: 15px; color: #fff;">
-								View All Projects
-							</a>
-						</div>
-					</div>
-
-				</div><!-- end:colorlib-narrow-content -->
-			</div><!-- end:colorlib-main -->
-		</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
+  <!-- Scripts -->
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/lucide.min.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 
 </html>
